@@ -187,5 +187,13 @@ def main():
     search_in_ll(ll)
     over_deletion(ll)
     insert_into_empty_ll(ll)
+    
+    def make_new_list(self):
+        nums = int(input("How many nodes do you want to create: "))
+        if nums == 0:
+            return
+        for i in range(nums):
+            value = int(input("Enter the value for the node:"))
+            self.insert_at_end(value)
 
 main()
